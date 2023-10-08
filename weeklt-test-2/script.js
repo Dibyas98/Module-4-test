@@ -1,4 +1,4 @@
-const containerEl = document.querySelector(".container");
+const containerEl = window.document.querySelector(".container");
 
 window.addEventListener("mousemove", (event) => {
   containerEl.innerHTML = `
