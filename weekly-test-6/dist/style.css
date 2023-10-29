@@ -25,6 +25,10 @@ nav{
     border-end-end-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+nav div{
+    display: flex;
+    align-items: center;
+}
 .bord{
     border: var(--border-test);
 }
@@ -217,4 +221,80 @@ h1:only-child{
 }
 .btn button{
     width: 90%;
+}
+.log{
+    width: 70px;
+    height: 30px;
+    background-color: #4F2EE8;
+    color: #fff;
+    border: none;
+}
+
+.toggle-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-button:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.slider input:checked + .slider-button {
+    background-color: #2196F3;
+}
+
+.slider input:checked + .slider-button:before {
+    transform: translateX(26px);
 }
